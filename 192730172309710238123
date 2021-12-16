@@ -1,0 +1,38 @@
+using System;
+
+namespace zadanie01823981023
+{
+    class Program
+    {
+        
+        static int Perimeter(int a, int b, int c)
+        {
+            return a + b + c;
+        }
+
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.Clear();
+
+                Console.WriteLine("Введите значение первой стороны: ");
+
+                int a = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Введите значение второй стороны: ");
+
+                int b = Convert.ToInt32(Console.ReadLine());
+                
+                Console.WriteLine("Введите значение третей стороны: ");
+
+                int c = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine($"Периметр = {Perimeter(a, b, c)}");
+
+                Console.ReadLine();
+            }
+        }
+
+    }
+}
