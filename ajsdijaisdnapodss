@@ -1,0 +1,44 @@
+using System;
+using System.Linq;
+
+namespace Lesson_5Lab4
+{
+    class Program
+    {
+       
+       
+
+        
+        static void Main(string[] args)
+        {
+            int max = int.MinValue;
+
+            int min = int.MaxValue;
+
+            MinmaxSeq(ref max, ref min);
+
+            Console.WriteLine($"min: {min}\nmax: {max}");
+        }
+
+        private static void MinmaxSeq(ref int max, ref int min)
+        {
+            Console.WriteLine("Введите последовательность и закончите ввод нулем");
+
+            int a;
+
+            do
+            {
+                a = Convert.ToInt32(Console.ReadLine());
+            }
+
+            while (a != 0);
+            {
+                if (a > max && a != 0)
+                    max = a;
+
+                if (a < min && a != 0)
+                    min = a;
+            }
+        }
+    }
+}
