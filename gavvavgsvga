@@ -1,0 +1,32 @@
+using System;
+
+namespace Факториал
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+
+            while (true)
+            {
+                Console.Clear();
+
+                Console.Write("Введи факториал: ");
+
+                int factorial = Convert.ToInt32(Console.ReadLine());
+
+                int n = 1;
+
+                for (int i = 1; i <= factorial; i++)
+                    {
+                        n *= i;
+                    }
+
+                Console.WriteLine(n);
+
+                Console.ReadLine();
+            }
+        }
+    }
+}
