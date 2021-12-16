@@ -1,0 +1,31 @@
+using System;
+
+namespace _3_exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            while (true)
+            {
+
+
+                Console.Clear();
+
+                Console.Write("Сумма покупки: ");
+
+                double a = Convert.ToInt32(Console.ReadLine());
+
+                if (a > 500 && a <= 1000)
+                    Console.WriteLine($"Цена с учетом скидки {a - (a * 0.03) }");
+                else if (a > 1000)
+                    Console.WriteLine($"Цена с учетом скидки {a - (a * 0.05) }");
+                else
+                    Console.WriteLine($"Цена с учетом скидки {a}");
+
+                Console.ReadLine();
+            }
+        }
+    }
+}
