@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Diagnostics;
+
+namespace Exercise_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+
+            while (true)
+            {
+                Console.Clear();
+
+                Console.Write("Введите количество элементов в массиве: ");
+
+                int a = Convert.ToInt32(Console.ReadLine());
+
+                int[] b = new int[a];  
+
+                int c = 1;  
+
+                int d = 0;  
+
+                // Создание массива
+
+                for (int i = 0; i < b.Length; i++)
+                {
+                    Console.Write($"Введите {i} элемент: ");
+
+                    b[i] = Convert.ToInt32(Console.ReadLine());
+                }
+
+                
+
+                for (int i = 0; i < b.Length; i++)
+                {
+                    if (c > b[i])
+                    {
+                        c = b[i];
+
+                        d = i;
+                    }
+                }
+
+                Console.WriteLine($"Минимальный элемент: {c}\nИндекс минимального элемента: {d}");
+
+                Console.ReadLine();
+            }
+
+        }
+    }
+}
