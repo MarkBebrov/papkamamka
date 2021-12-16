@@ -1,0 +1,13 @@
+using System;
+
+namespace Капитализация_текста
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+
+        }
+    }
+}
