@@ -1,0 +1,33 @@
+using System;
+
+namespace czczxcz
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+
+            while (true)
+            {
+                Console.Clear();
+
+                Console.Write("Первое число (A > B): ");
+
+                int a = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Второе число (B < A): ");
+
+                int b = Convert.ToInt32(Console.ReadLine());
+
+                for (int i = a; i >= b; i--)
+                {
+                    if (i % 2 != 0)
+                    Console.WriteLine(i);
+                }
+
+                Console.ReadLine();
+            }
+        }
+    }
+}
